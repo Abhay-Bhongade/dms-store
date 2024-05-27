@@ -1,0 +1,167 @@
+.nav-tabs {
+  /* border: 1px solid #000; */
+  border-radius: 6px;
+  outline: none;
+  margin: 0px;
+  height: 47px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 1px 0px #00000040;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #f24b55;
+  border-color: #dee2e6 #dee2e6 #fff;
+  box-shadow: 0px 2px 1px 0px #00000040;
+}
+
+.nav-tabs .nav-item {
+  padding-left: 3px;
+  padding-right: 3px;
+  overflow-y: hidden;
+}
+
+.nav-tabs .nav-link {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 22.27px;
+  letter-spacing: 0.6700000166893005px;
+  text-align: center;
+  color: #303030;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+
+.statistic-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  letter-spacing: 0.6700000166893005px;
+  text-align: left;
+  color: #303030;
+}
+
+
+
+.icon-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+}
+
+.statistic-value {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 22.27px;
+  letter-spacing: 0.6700000166893005px;
+}
+
+.statistic-card {
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+/* delivery card bg start */
+.d-total-district-bg {
+  background-color: #55a4fb;
+}
+.d-total-beat-bg {
+  background-color: #00dabd;
+}
+
+.d-total-order-amt-bg {
+  background-color: #04d186;
+}
+
+.d-total-delivery-amt-bg {
+  background-color: #f0713a;
+}
+
+.d-total-delivery-percntg-bg {
+  background-color: #ff657c;
+}
+/* delivery card bg end */
+
+/* escalation card bg start */
+.e-total-escal-count-bg {
+  background-color: #499efa;
+}
+
+.e-postv-escal-count-bg {
+  background-color: #00d086;
+}
+
+.e-negtv-escal-count-bg {
+  background-color: #f01648;
+}
+
+/* escalation card bg end */
+
+/* calling card bg start */
+
+.total-calling-bg {
+  background-color: #01cf86;
+}
+
+.active-calling-bg {
+  background-color: #f24b55;
+}
+
+.gauge-statistic-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15.36px;
+  letter-spacing: 0.801086962223053px;
+  text-align: left;
+}
+.gauge-statistic-score {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 17.28px;
+  letter-spacing: 0.801086962223053px;
+  text-align: left;
+}
+
+/* calling card bg end */
+
+.delivery-score-bg {
+  background-color: #8e60f4;
+}
+.escalation-tag-score {
+  background-color: #f0713a;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-flex {
+  flex: 1;
+  display: flex;
+}
+
+.statistic-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .nav-tabs li:nth-child(2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+} */
+
+.customer-score-card-heading {
+  margin-bottom: -4px;
+}

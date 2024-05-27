@@ -1,13 +1,295 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.card h4:hover {
+  cursor: pointer;
+}
+
+/* table css start */
+
+.table-wrapper {
+  overflow-x: auto;
+  background-color: #fff;
+}
+
+.table {
+  /* border-radius: 5px;
+  border-collapse: separate;
+  border-spacing: 0 2px; */
+  padding: 20px;
+  width: max-content;
+  min-width: 100%;
+}
+
+tbody {
+  background-color: #a5c1d8;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-heading-row {
+  background-color: #ededed !important;
+  background-color: #f24b55 !important;
+}
+
+thead tr th {
+  color: #fff !important;
+  text-align: center !important;
+  line-height: 16.41px !important;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600 !important;
+}
+
+tbody tr td {
+  font-weight: 500 !important;
+  line-height: 14.06px !important;
+  letter-spacing: 0.6700000166893005px !important;
+  color: #303030 !important;
+  text-align: center !important;
+}
+
+tbody tr {
+  background-color: #ffffff;
+}
+
+.tw-smoothscroll {
+  overflow-y: scroll;
+  max-height: 500px;
+  scroll-behavior: smooth;
+}
+
+.css-1ex1afd-MuiTableCell-root {
+  border-bottom: 1px solid #555555 !important;
+}
+
+/* table css end */
+
+.content-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-at-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(189, 43, 43);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e35e6a;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ba3d47;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
+
+.content-in-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-85vh1n-MuiGauge-container {
+  height: 12rem !important;
+}
+
+.tab-view-container .nav-tabs {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.store-link:hover {
+  cursor: pointer;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.ml-n1rem {
+  margin-left: -1rem !important;
+}
+
+.mr-neg {
+  margin-right: -10px !important;
+}
+
+.card-shadow {
+  box-shadow: 0px 2px 1px 0px #00000040;
+}
+
+@media (max-width: 540px) {
+  .css-levciy-MuiTablePagination-displayedRows,
+  .css-pdct74-MuiTablePagination-selectLabel {
+    margin-bottom: 0px !important;
+  }
+  /* for row per page  */
+  .css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+    margin-right: 14px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+    padding-left: 4px !important;
+  }
+  /* for row per page  */
+  .css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+    margin-right: 10px !important;
+  }
+  /* for previous and next button  */
+  .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar
+    .MuiTablePagination-actions {
+    margin-left: -6px !important;
+  }
+  tbody tr td {
+    font-family: Roboto;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 14.06px !important;
+    letter-spacing: 0.6700000166893005px !important;
+    text-align: center;
+    color: #303030 !important;
+  }
+  thead tr th {
+    font-family: Roboto;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 16.41px !important;
+    letter-spacing: 0.6700000166893005px !important;
+    text-align: center;
+  }
+}
+
+.filter_reset_btn{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 600;
+line-height: 25.78px;
+letter-spacing: 0.6700000166893005px;
+text-align: left;
+color: #F3505A;
+}
+
+@media (max-width: 365px) {
+  /* for row per page  */
+  .css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+    margin-right: 2px !important;
+    margin-left: 0px !important;
+  }
+  /* for previous and next button  */
+  .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar
+    .MuiTablePagination-actions {
+    margin-left: -8px !important;
+  }
+}
+
+/* table css end */
+
+@media (max-width: 400px) {
+  .nav-link {
+    padding: 8px 0px;
+    font-size: 14px;
+  }
+  .gauge-statistic-title {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 15.36px;
+    letter-spacing: 0.801086962223053px;
+    text-align: left;
+    color: #303030;
+  }
+
+  .card-nested-content-para {
+    font-size: 12px !important;
+  }
+
+  .gauge-statistic-score {
+    font-size: 14px !important;
+    margin-left: 4px !important;
+  }
+
+  .nav-tabs .nav-link {
+    font-size: 14px !important;
+  }
+  .statistic-title,
+  .statistic-value {
+    font-size: 14px !important;
+  }
+
+  .card-heading {
+    font-size: 16px !important;
+  }
+
+  .card-subheading {
+    font-size: 14px !important;
+  }
+  tspan {
+    font-size: 30px !important;
+  }
+  .your-score-heading {
+    font-size: 18px !important;
+  }
+  .your-score {
+    font-size: 36px !important;
+  }
+  .card-content {
+    height: 40px !important;
+    font-size: 14px !important;
+  }
+}
+
+.custom-hover:hover {
+  background-color: transparent !important;
 }
